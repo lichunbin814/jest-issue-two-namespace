@@ -11,12 +11,19 @@ export class AppComponent {
   // OK
   testField: AppType.Second.Test;
 
-   // OK
-   testField2: One.Test;
+  // OK
+  testField2: One.Test;
 
   // TypeError: Cannot read property 'Test' of undefined
   @Input()
   set testSetter(value: AppType.Second.Test) {
     console.log(1);
   }
+
+  testFunction(value: AppType.Second.Test) {
+    console.log(1);
+  }
 }
+
+
+
