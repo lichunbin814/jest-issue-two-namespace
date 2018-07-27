@@ -5,3 +5,9 @@ export namespace AppType {
     }
   }
 }
+
+export namespace One {
+  export interface Test {
+    a: string;
+  }
+}

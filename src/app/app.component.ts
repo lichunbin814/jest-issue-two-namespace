@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AppType } from './app';
+import { AppType, One } from './app';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,9 @@ export class AppComponent {
 
   // OK
   testField: AppType.Second.Test;
+
+   // OK
+   testField2: One.Test;
 
   // TypeError: Cannot read property 'Test' of undefined
   @Input()
